@@ -1,0 +1,63 @@
+div {
+
+    text-align: center;
+    
+}
+
+.xButton{
+
+background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-629gmh43MF68ckEs5hSEAHaHa%26pid%3DApi&f=1&ipt=de8c698895f01bf5bf2070a67aeb334260d7cfdee9c2fb749c49ae78b0f6187c&ipo=images');
+background-size: 3cm 3cm;
+
+}
+
+
+.oButton{
+
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kindpng.com%2Fpicc%2Fm%2F3-31596_letter-o-png-transparent-png.png&f=1&nofb=1&ipt=73c8bb158e374367de1f66ddb6901372d75b049b06d542fa6d62ead858176ff6&ipo=images');
+    background-size: 3cm 3cm;
+    
+    }
+div button {
+
+    size:auto;
+   background-color: whitesmoke;
+   border-radius: 10px;
+   border-style: none;
+    margin: 5px;
+    height: 3cm;
+    width: 3cm;
+   background-size:3cm;
+}
+
+div button:hover {
+    opacity: .7;
+   background-color: 1B4242;
+ 
+}
+
+body  {
+   background-color: gray;
+}
+
+.rest-hidden{
+    margin: 3cm;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    visibility: hidden;
+
+.reset-hidden{
+    margin: 3cm;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    visibility: hidden;
+}
+}
+.reset-shown{
+    margin: 3cm;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    visibility: visible;
+
+
+}
