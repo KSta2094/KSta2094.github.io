@@ -154,21 +154,7 @@ function cheakIfOWon(moves,winningConditions){
 
 
 
-    setInterval(()=>{
+        
+        
+        
 
-        Game.ClickCookie();
-        
-        let products = document.getElementsByClassName("product unlocked enabled");
-        
-        
-        
-           products.reverse.forEach((product) =>{
-        
-        product.click();
-        
-        })
-        
-        
-        
-        
-        },0.1)
