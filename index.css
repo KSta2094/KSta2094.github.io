@@ -1,50 +1,75 @@
-html, body {
+html,
+body {
     height: 100%;
-  }
-
-.main{
-height: 100%;
-width: 100%;
-background-color:#915e12;
 }
 
-.sticky-note-head{
-    position:absolute;
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #915e12;
+}
+
+.sticky-note-head {
     width: 150px;
     height: 25px;
-    right:572px;
-    background-color:#e0c77d;
+    right: 572px;
+    top: 0px;
+    background-color: #e0c77d;
 }
-.sticky-note-body{
+
+.sticky-note-body {
+    position: relative;
     width: 150px;
     height: 130px;
-    position:absolute;
-    top: 20px;
-    right:560px;
+    top: 0px;
+    right: -12px;
     transform: skew(10deg);
     background-color: #c7af68;
     box-shadow: -10px 8px;
     transition-duration: 500ms;
 }
-.sticky-note-body:hover{
+
+.sticky-note-body:hover {
+    position: relative;
     transform: skew(0deg);
     box-shadow: 0px 0px;
-    right: 573px;
+    right: 0px;
 }
 
-.sticky-note-body img{
+.sticky-note-body img {
     display: block;
     align-items: center;
     margin: auto;
-    margin-top: 10px;
+    padding-top: 10px;
     width: 130px;
     height: 110px;
     object-fit: cover;
 }
 
-.book{
-    position:relative;
+.book {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
     width: 730px;
     height: 550px;
-    background-color: red;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.b26cVLmDby3Bqv-y39rvVgHaFi%26pid%3DApi&f=1&ipt=4b0b7b2c65390e12be32a3e948a77550dd02b272fdc84e8839555f8ba029b49c&ipo=images");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.book-img{
+    width: 730px;
+    height: 550px;
+    object-fit: fill;
+}
+
+.sticky_note{
+background-color: rgb(0, 17, 255);
+width: 75%;
+height: 75%;
+}
+
+p{
+    right: 573px;
+    top: 160px;
 }
