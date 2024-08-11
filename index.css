@@ -4,25 +4,26 @@ body {
 }
 
 .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    width: 100%;
     background-color: #915e12;
 }
 
 .sticky-note-head {
+    position: relative;
     width: 150px;
     height: 25px;
-    right: 572px;
-    top: 0px;
     background-color: #e0c77d;
 }
 
 .sticky-note-body {
     position: relative;
+    display: inline-block;
     width: 150px;
     height: 130px;
-    top: 0px;
-    right: -12px;
+    margin-left: 12px;
     transform: skew(10deg);
     background-color: #c7af68;
     box-shadow: -10px 8px;
@@ -30,13 +31,14 @@ body {
 }
 
 .sticky-note-body:hover {
-    position: relative;
+    display: inline-block;
     transform: skew(0deg);
     box-shadow: 0px 0px;
-    right: 0px;
+    margin: 0px;
 }
 
 .sticky-note-body img {
+    position: relative;
     display: block;
     align-items: center;
     margin: auto;
@@ -48,25 +50,24 @@ body {
 
 .book {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
     width: 730px;
     height: 550px;
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.b26cVLmDby3Bqv-y39rvVgHaFi%26pid%3DApi&f=1&ipt=4b0b7b2c65390e12be32a3e948a77550dd02b272fdc84e8839555f8ba029b49c&ipo=images");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
 }
 
-.book-img{
-    width: 730px;
-    height: 550px;
-    object-fit: fill;
+.text{
+    rotate: -3deg;
 }
 
-.sticky_note{
-background-color: rgb(0, 17, 255);
-width: 75%;
-height: 75%;
+.sticky-note{
+transform: scale(0.8);
+rotate: -5deg;
+position: relative;
+left: 100px;
 }
 
 p{
