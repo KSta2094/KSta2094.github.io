@@ -12,20 +12,22 @@ body {
 }
 
 .sticky-note-head {
+    rotate: -5deg;
     position: relative;
     width: 150px;
     height: 25px;
-    background-color: #e0c77d;
+    background-color: #c7af68;
 }
 
 .sticky-note-body {
+    rotate: -5deg;
     position: relative;
     display: inline-block;
     width: 150px;
     height: 130px;
-    margin-left: 12px;
+    margin-left: 19px;
     transform: skew(10deg);
-    background-color: #c7af68;
+    background-color: #e0c77d;
     box-shadow: -10px 8px;
     transition-duration: 500ms;
 }
@@ -34,7 +36,8 @@ body {
     display: inline-block;
     transform: skew(0deg);
     box-shadow: 0px 0px;
-    margin: 0px;
+    background-color:#c7af68 ;
+    margin-left: 7px;
 }
 
 .sticky-note-body img {
@@ -82,7 +85,6 @@ height: 300px;
 .sticky-note{
 position: relative;
 transform: scale(0.6);
-rotate: -5deg;
 height: 150px;
 }
 
@@ -100,4 +102,35 @@ height: 150px;
 span{
     font-family:'Shadows Into Light';
     font-weight: 300;
+}
+
+.pencil{
+    position: absolute;
+    top: 15%;
+    right:20% ;
+    width: 290px;
+    height: 70px;
+    background-color: blue;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.klbirsR2NqEUaiimRNVt0QHaB8%26pid%3DApi&f=1&ipt=10d053a10b46824261dab58021ef7aab72786ff45f5e8508fe59f907402702bf&ipo=images");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.pencil.animated1{
+    animation: pencilAnimFor 800ms forwards ease-out;
+}
+.pencil.animated2{
+    animation: pencilAnimBack 800ms forwards ease-out;
+}
+
+
+@keyframes pencilAnimFor {
+    0% {top: 15%;}
+    100% {top: 6%;}
+}
+
+
+@keyframes pencilAnimBack {
+    0% {top: 6%;}
+    100% {top: 15%;}
 }
